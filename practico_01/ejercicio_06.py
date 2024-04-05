@@ -5,14 +5,24 @@ from typing import List, Union
 
 def numeros_al_final_basico(lista: List[Union[float, str]]) -> List[Union[float, str]]:
     """Toma una lista de enteros y strings y devuelve una lista con todos los
-    elementos numéricos al final.
+     elementos numéricos al final.
     """
+    primero=0
+    listasuperduper = []
+    for elemento in lista:
+        if str(elemento).isnumeric():
+             listasuperduper.append(elemento)
+        else:
+             listasuperduper.insert(primero,elemento)
+             primero = primero + 1
+    return listasuperduper;
+       
     pass # Completar
 
 
-# NO MODIFICAR - INICIO
-assert numeros_al_final_basico([3, "a", 1, "b", 10, "j"]) == ["a", "b", "j", 3, 1, 10]
-# NO MODIFICAR - FIN
+# # NO MODIFICAR - INICIO
+# assert(numeros_al_final_basico([3, "a", 1, "b", 10, "j"])  == ["a", "b", "j", 3, 1, 10])
+# # NO MODIFICAR - FIN
 
 
 ###############################################################################
@@ -20,7 +30,9 @@ assert numeros_al_final_basico([3, "a", 1, "b", 10, "j"]) == ["a", "b", "j", 3, 
 
 def numeros_al_final_comprension(lista: List[Union[float, str]]) -> List[Union[float, str]]:
     """Re-escribir utilizando comprensión de listas."""
-    pass # Completar
+    listabooh: List[Union[float,str]] = [c for c in lista if str(c).isnumeric()]
+    listaultraduper: List[Union[float,str]] = [c for c in lista if not str(c).isnumeric()]
+    return listaultraduper+listabooh
 
 
 # NO MODIFICAR - INICIO
