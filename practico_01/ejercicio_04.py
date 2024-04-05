@@ -9,7 +9,19 @@ def es_vocal_if(letra: str) -> bool:
     Referencia: https://docs.python.org/3/library/stdtypes.html#string-methods
     """
     pass # Completar
-
+    vocales = ['a','e','i','o','u']
+    l = letra.lower()
+    if l == 'a':
+        return True
+    elif l == 'e':
+        return True
+    elif l == 'i':
+        return True
+    elif l == 'o':
+        return True
+    elif l == 'u':
+        return True
+    else: return False
 
 # NO MODIFICAR - INICIO
 assert es_vocal_if("a")
@@ -26,6 +38,10 @@ def es_vocal_if_in(letra: str) -> bool:
     Referencia: https://docs.python.org/3/reference/expressions.html#membership-test-operations
     """
     pass # Completar
+    vocales = ['a','e','i','o','u']
+    if letra.lower() in vocales:
+        return True
+    else: return False
 
 
 # NO MODIFICAR - INICIO
@@ -41,6 +57,10 @@ assert es_vocal_if_in("A")
 def es_vocal_in(letra: str) -> bool:
     """Re-escribir utilizando el operador IN pero sin utilizar IF."""
     pass # Completar
+
+    vocales = ['a','e','i','o','u']
+    return letra.lower() in vocales
+        
 
 
 # NO MODIFICAR - INICIO
