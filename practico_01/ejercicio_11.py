@@ -89,7 +89,7 @@ from functools import reduce
 suma_numeros_al_cubo_pares = reduce(lambda x, y: x + y, numeros_al_cubo_pares)
 
 
-# Escribir una función Lambda que permita ordenar los elementos de la numeros
+# Escribir una función Lambda que permita ordenar los elementos de la numeross
 # en base a si son pares o impares
 
 numeros_ordenada = sorted(numeros, key=lambda x: x % 2 == 0)
