@@ -9,6 +9,11 @@ def es_palindromo(palabra: str) -> bool:
     Referencia: https://docs.python.org/3/tutorial/introduction.html#lists
     """
     pass # Completar
+    palindromo=False
+    alrevez = palabra[::-1]
+    if(palabra==alrevez):
+        palindromo=True
+        return palindromo
 
 
 # NO MODIFICAR - INICIO
@@ -28,11 +33,19 @@ def mitad(palabra: str) -> str:
     Restricción: No utilizar bucles - Usar Slices de listas.
     Referencia: https://docs.python.org/3/tutorial/introduction.html#lists
     """
-    pass # Completar
+    pass 
+    # palabra2=palabra[:len(palabra)//2]
+    if(len(palabra)%2 == 0):
+        return palabra[:len(palabra)//2]
+    else:
+        return palabra[:(len(palabra)//2 +1) ]
 
+    
 
 # NO MODIFICAR - INICIO
 assert mitad("hello") == "hel"
 assert mitad("Moon") == "Mo"
 assert mitad("") == ""
+
 # NO MODIFICAR - FIN
+
