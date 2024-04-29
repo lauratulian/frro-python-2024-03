@@ -22,7 +22,8 @@ def sumatoria_sum(n: int) -> int:
     """Re-Escribir utilizando la función sum y sin usar bucles.
     Referencia: https://docs.python.org/3/library/functions.html#sum
     """
-    pass # Completar
+    pass
+
 
 
 # NO MODIFICAR - INICIO
@@ -66,3 +67,4 @@ if __name__ == "__main__":
     assert sumatoria_gauss(1) == 1
     assert sumatoria_gauss(100) == 5050
 # NO MODIFICAR - FIN
+
